@@ -1,0 +1,31 @@
+{
+  "name": "electron-webpack",
+  "version": "1.0.0",
+  "main": "src/electron.js",
+  "license": "MIT",
+  "author": "Renato",
+  "description": "electron webpack",
+  "scripts": {
+    "build": "webpack",
+    "start": "yarn build && electron ."
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.9",
+    "@types/react-dom": "^18.0.4",
+    "awesome-typescript-loader": "^5.2.1",
+    "css-loader": "^6.7.1",
+    "electron": "^18.2.4",
+    "html-webpack-plugin": "^5.5.0",
+    "postcss": "^8.4.14",
+    "postcss-loader": "^7.0.0",
+    "postcss-preset-env": "^7.6.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "style-loader": "^3.3.1",
+    "tailwindcss": "^3.0.24",
+    "ts-loader": "^9.3.0",
+    "typescript": "^4.6.4",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  }
+}
