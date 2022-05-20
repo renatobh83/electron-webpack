@@ -5,7 +5,7 @@ module.exports = [
     {
       mode: 'development',
       devtool: 'eval-source-map',
-      entry: resolve(__dirname, "src", "react.tsx"),
+      entry: resolve(__dirname, "src", "index.tsx"),
       target: 'electron-renderer',
       module: {
         rules: [{
@@ -17,15 +17,14 @@ module.exports = [
           test: /\.css$/,
           exclude: /node_modules/,
           use: ['style-loader', 'css-loader','postcss-loader']
-      }
-      ]
+      }]
       },
       output: {
-        path: resolve(__dirname + 'dist'),
+        path: resolve(__dirname + '/dist'),
         filename: 'electron.js'
       },
       resolve: {
-        extensions: ['.js', '.jsx','tsx', "ts"]
+        extensions: ['.js', '.jsx','.tsx', ".ts"]
       },
       plugins:[
           new HtmlWebpackPlugin({
